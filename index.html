@@ -136,12 +136,24 @@ nav{
 /* FIFA 26 Artwork */
 .hero-art{
   position:absolute;
-  right:-2%;
-  top:50%;
-  transform:translateY(-50%);
-  width:clamp(420px,42vw,760px);
-  z-index:4;
+  inset:0;
+  z-index:1;
   pointer-events:none;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      #070816 0%,
+      rgba(7,8,22,.96) 28%,
+      rgba(7,8,22,.55) 52%,
+      rgba(7,8,22,.08) 100%
+    ),
+    url("fifa26-art.png");
+
+  background-repeat:no-repeat;
+  background-size:72vw auto;
+  background-position:right center;
+  opacity:.96;
 }
 
 .hero-art img{
