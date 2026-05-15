@@ -85,10 +85,10 @@ nav{
   background:
     linear-gradient(
       90deg,
-      rgba(5,8,20,.98) 0%,
-      rgba(5,8,20,.92) 28%,
-      rgba(5,8,20,.55) 48%,
-      rgba(5,8,20,.12) 70%
+    rgba(5,8,20,.99) 0%,
+    rgba(5,8,20,.96) 28%,
+    rgba(5,8,20,.68) 48%,
+    rgba(5,8,20,.28) 70%
     ),
     url("hero-back.png");
 
@@ -137,16 +137,22 @@ nav{
   width:850px;
   z-index:4;
   pointer-events:none;
+
   filter:
     drop-shadow(0 25px 35px rgba(0,0,0,.45))
     drop-shadow(0 0 25px rgba(255,215,0,.12));
+
   animation:floatTrophy 4s ease-in-out infinite;
+
+  will-change:transform;
 }
 
 .hero-trophy img{
   width:100%;
   height:auto;
   display:block;
+
+  image-rendering:auto;
 }
   @keyframes floatTrophy{
   0%{
