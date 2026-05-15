@@ -139,8 +139,10 @@ nav{
   pointer-events:none;
 
   filter:
-    drop-shadow(0 25px 35px rgba(0,0,0,.45))
-    drop-shadow(0 0 25px rgba(255,215,0,.12));
+  drop-shadow(0 25px 35px rgba(0,0,0,.45))
+  drop-shadow(0 0 25px rgba(255,215,0,.12))
+  drop-shadow(0 0 45px rgba(255,215,0,.18))
+  drop-shadow(0 0 90px rgba(255,255,220,.08));
 
   animation:floatTrophy 4s ease-in-out infinite;
 
@@ -151,8 +153,8 @@ nav{
   width:100%;
   height:auto;
   display:block;
-
-  image-rendering:auto;
+ image-rendering:auto;
+filter: brightness(1.08) contrast(1.06);
 }
   @keyframes floatTrophy{
   0%{
