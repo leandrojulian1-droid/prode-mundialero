@@ -135,11 +135,14 @@ background-color:#050814;
 .hero-trophy{
   position:absolute;
   left:43%;
-  top:75%;
+  top:80%;
   transform:translate(-50%,-50%);
   width:360px;
   z-index:4;
   pointer-events:none;
+  animation:floatTrophy 5s ease-in-out infinite;
+  will-change:transform;
+}
 }
 
   filter:
@@ -160,16 +163,18 @@ background-color:#050814;
 filter: brightness(1.08) contrast(1.06);
 }
   @keyframes floatTrophy{
-   0%{
-    transform:translate(-50%,-50%) translateY(0px);
+  0%{
+    transform:translate(-50%,-50%) translateY(0);
   }
 
   50%{
-    transform:translate(-50%,-50%) translateY(-6px);
+    transform:translate(-50%,-50%) translateY(-8px);
   }
 
   100%{
-    transform:translate(-50%,-50%) translateY(0px);
+    transform:translate(-50%,-50%) translateY(0);
+  }
+}
   }
 }
 
@@ -178,13 +183,14 @@ Con eso:
  .hero-content{
   position:relative;
   z-index:6;
-  padding:0 3%;
   width:52%;
   display:flex;
   flex-direction:column;
   gap:0;
   margin-top:-20px;
-  margin-left:50px;
+  margin-left:60px;
+  padding:0;
+}
 }
 }
 .hc-eyebrow{
