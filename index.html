@@ -75,10 +75,12 @@ nav{
 ════════════════════════════════════════════ */
 #hero{
   position:relative;
+  isolation:isolate;
   height:calc(100vh - 52px);
   min-height:560px;
   max-height:820px;
-  overflow:hidden;
+  overflow-x:hidden;
+  overflow-y:hidden;
   display:flex;
   align-items:center;
 
@@ -95,6 +97,7 @@ nav{
 background-size: cover;
 background-position: 90% center;
 background-repeat: no-repeat;
+background-color:#050814;
 }
 
 /* Old visual layers disabled */
