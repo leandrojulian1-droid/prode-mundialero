@@ -134,21 +134,27 @@ background-color:#050814;
 /* Hero left content */
 .hero-trophy{
   position:absolute;
+
   left:50%;
-  top:60%;
+  top:88%;
+
   transform:translate(-50%,-50%);
-  width:850px;
+
+  width:900px;
+
   z-index:4;
+
   pointer-events:none;
 
   filter:
-  drop-shadow(0 25px 35px rgba(0,0,0,.45))
-  drop-shadow(0 0 25px rgba(255,215,0,.12))
-  drop-shadow(0 0 45px rgba(255,215,0,.18))
-  drop-shadow(0 0 90px rgba(255,255,220,.08));
+    drop-shadow(0 30px 45px rgba(0,0,0,.55))
+    drop-shadow(0 0 45px rgba(255,215,0,.18))
+    drop-shadow(0 0 90px rgba(255,215,0,.08));
 
+  animation:floatTrophy 5s ease-in-out infinite;
 
   will-change:transform;
+
 }
 
 .hero-trophy img{
@@ -162,9 +168,11 @@ filter: brightness(1.08) contrast(1.06);
   0%{
     transform:translate(-50%,-50%) translateY(0px);
   }
+
   50%{
-    transform:translate(-50%,-50%) translateY(-10px);
+    transform:translate(-50%,-50%) translateY(-12px);
   }
+
   100%{
     transform:translate(-50%,-50%) translateY(0px);
   }
